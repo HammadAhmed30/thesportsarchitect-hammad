@@ -14,7 +14,7 @@ import Autoplay from "embla-carousel-autoplay"
 
 export default function ReviewsSection() {
   return (
-    <section className="pt-[48px] py-elementSpace">
+    <section className="pt-[48px] pb-elementSpace">
       <Wrapper className={"px-[50px]"}>
         <MediumHeading className={"flex gap-[10px] items-center"}>
           <Triangle className={"mx-[20px]"} dark={true} />
