@@ -17,18 +17,18 @@ export default function AboutUsSection() {
 
 
   return (
-    <section className='py-[50px]'>
+    <section className='py-sectionSepration'>
         <Wrapper className={"px-[50px] "}>
             <MediumHeading className={"flex gap-[10px] items-center"}>
                 <Triangle className={"mx-[20px]"} dark={true} />
                 About Us
             </MediumHeading>
             <LargeParagraph className={"w-full max-w-[800px] mt-[30px]"}>SERVING IN 3D ARCHITECTURE FIELD FOR MORE THAT 10 YEARS AND HAVE OVER 250+ HAPPY CLIENTS FROM ALL OVER THE WORLD</LargeParagraph>
-            <div className='mt-[50px] flex justify-evenly items-center'>
+            <div className='mt-elementSpace flex justify-evenly items-center'>
                 <div className='flex flex-col justify-center items-center'>
                 <ScrollTrigger
             onEnter={() => setCounterOn(true)}
-            onExit={() => setCounterOn(false)}
+            // onExit={() => setCounterOn(false)}
           >
                     <h1 className={"text-[70px] font-[600] relative flex"}>
                     {counterOn && (
@@ -43,7 +43,7 @@ export default function AboutUsSection() {
                 <div className='flex flex-col justify-center items-center'>
                 <ScrollTrigger
             onEnter={() => setCounterOn(true)}
-            onExit={() => setCounterOn(false)}
+            // onExit={() => setCounterOn(false)}
           >
                     <h1 className={"text-[70px] font-[600] relative flex"}>
                     {counterOn && (
@@ -65,12 +65,13 @@ export default function AboutUsSection() {
 
 const OurClients = () =>{
     return (
-        <div className='w-full mt-[50px] pb-[50px]'>
-            <MediumHeading className={"flex gap-[10px] pl-[15px] items-center"}>
+        <div className='w-full mt-sectionSepration'>
+
+            <MediumHeading className={"flex gap-[10px] px-[50px] items-center"}>
                 <Triangle className={"mx-[20px]"} dark={true} />
                 Our Clients
             </MediumHeading>
-            <div className='mt-[50px]'>
+            <div className='mt-elementSpace'>
 
             </div>
             <Marquee pauseOnHover={true}>

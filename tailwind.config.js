@@ -51,6 +51,11 @@ module.exports = {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
+		  spacing: {
+			"sectionSepration":"80px",
+			"elementSpace":"60px",
+			"smallTagSpacing":"50px"
+		  },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
