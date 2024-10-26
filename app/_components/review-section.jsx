@@ -15,29 +15,29 @@ import Autoplay from "embla-carousel-autoplay"
 export default function ReviewsSection() {
   return (
     <section className="pt-[48px] pb-elementSpace">
-      <Wrapper className={"px-[50px]"}>
+      <Wrapper className={"md:px-[50px] px-[12px]"}>
         <MediumHeading className={"flex gap-[10px] items-center"}>
-          <Triangle className={"mx-[20px]"} dark={true} />
+          <Triangle className={"md:mx-[20px] mx-[5px]"} dark={true} />
           Reviews
         </MediumHeading>
         <Carousel opts={{loop:true}} plugins={[
         Autoplay({
           delay: 2000,
         }),
-      ]} className="w-full mt-elementSpace">
+      ]} className="w-full mt-elementSpace relative overflow-hidden">
           <CarouselContent>
-            <CarouselItem className="basis-1/2">
+            <CarouselItem className="md:basis-1/2">
             <ReviewCard/>
             </CarouselItem>
-            <CarouselItem className="basis-1/2">
+            <CarouselItem className="md:basis-1/2">
             <ReviewCard/>
             </CarouselItem>
-            <CarouselItem className="basis-1/2">
+            <CarouselItem className="md:basis-1/2">
             <ReviewCard/>
             </CarouselItem>
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="absolute left-[10px] md:flex hidden" />
+          <CarouselNext className="absolute bottom-0 right-[10px] md:flex hidden" />
         </Carousel>
       </Wrapper>
     </section>
@@ -47,8 +47,8 @@ export default function ReviewsSection() {
 
 const ReviewCard = () =>{
     return (
-        <div className="bg-black p-[30px] rounded-tl-[50px]">
-            <img src="/quotes.png" className="w-[50px]" alt="" />
+        <div className="bg-black md:p-[30px] p-[20px] rounded-tl-[50px]">
+            <img src="/quotes.png" className="md:w-[50px] w-[35px]" alt="" />
             <SmallParagraph className={"mt-[20px] text-white"}>
             THIS IS SOME DUMMY TEXT THAT WILL BE CHANGED WITH SOME REVIEW TEXT FROM FIVERR LATER WHILE DEVELOPMENT TEXT THAT WILL BE CHANGED WITH SOME REVIEW TEXT FROM FIVERR LATER WHILE DEVELOPMENT PROCESS.
             </SmallParagraph>

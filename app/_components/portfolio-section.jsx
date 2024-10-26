@@ -18,8 +18,8 @@ export default function PortfolioSection() {
   const x = useTransform(scrollYProgress, [0,1], ["0%", "-90%"])
 
   return (
-    <section ref={targetRef} className='relative h-[400vh] pb-elementSpace'>
-      <Wrapper className={" h-[100vh] sticky top-0 overflow-hidden flex items-center pb-[12px]"}>
+    <section ref={targetRef} className='relative h-[400vh] pb-elementSpace md:bg-transparent bg-black'>
+      <Wrapper className={"h-[100vh] sticky top-0 overflow-hidden flex items-center pb-[12px]"}>
         
         <motion.div style={{x}} className='flex gap-[12px]'>
 
@@ -37,7 +37,7 @@ export default function PortfolioSection() {
 
 const Card = () =>{
   return(
-    <div className='h-[100vh] md:h-[100vh] min-w-[90vw] md:min-w-[600px] bg-mainColor group hover:scale-[.92] transition-all'>
+    <div className='h-[10vh] min-h-[550px] md:h-[100vh] min-w-[90vw] md:min-w-[600px] bg-mainColor group hover:scale-[.92] transition-all'>
       <div className='w-full h-[62%] overflow-hidden '>
         <img src="/1-min.jpg" className='w-full h-full object-cover bg-center group-hover:scale-[1.1] transition-all' alt="" />
       </div>

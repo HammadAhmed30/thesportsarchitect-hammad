@@ -1,9 +1,11 @@
 "use client"
 
+import ReuseableButton from "@/components/button";
 import Triangle from "@/components/triangle";
 import MediumHeading from "@/components/TypoGraphy/heading-medium";
 import Wrapper from "@/components/wrapper";
 import Cal, { getCalApi } from "@calcom/embed-react";
+import Link from "next/link";
 import { useEffect } from "react";
 
 
@@ -11,16 +13,23 @@ export default function CallUsSection() {
   return (
     <section className="w-full relative ">
       <Wrapper>
-        <div className="rounded-[80px] h-full overflow-hidden bg-black py-[50px] px-[15px] relative">
+        <div className="rounded-[80px] md:mt-0 mt-elementSpace h-full overflow-hidden bg-black py-[50px] px-[15px] relative">
           <MediumHeading
-            className={"flex gap-[10px] px-[20px] text-white items-center"}
+            className={"flex gap-[10px]  md:px-[20px] text-white items-center"}
           >
-            <Triangle className={"mx-[20px]"} dark={false} />
+            <Triangle className={"md:mx-[20px] mx-[5px]"} dark={false} />
             Call Us
           </MediumHeading>
 
-<div className="mt-sectionSepration"></div>
+<div className="md:mt-sectionSepration mt-elementSpace"></div>
+          
+          
           <CallBox/>
+
+          <div className="w-full flex justify-center"></div>
+          <Link href={"/"} className="flex justify-center">
+          <ReuseableButton className={"w-[80%]"}>Start a Call</ReuseableButton>
+          </Link>
 
         </div>
 
@@ -40,8 +49,9 @@ useEffect(()=>{
 }, [])
 return <Cal namespace="15min"
   calLink="etralbit/15min"
-  style={{width:"100%",height:"100%",overflow:"scroll"}}
+  style={{width:"100%",height:"100%",overflow:"hidden"}}
   config={{"layout":"month_view"}}
+  className="md:block hidden overflow-hidden"
   
   
 />;

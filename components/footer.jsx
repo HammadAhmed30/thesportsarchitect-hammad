@@ -16,7 +16,7 @@ export default function Footer() {
         </a>
 
       </div>
-        <a className='text-[17px] mt-[40px] font-[400] leading-[130%] text-white' href="mainto:the.sportsarchitect@gmail.com" >the.sportsarchitect@gmail.com</a>
+        <a className='md:text-[17px] text-[14px] mt-[40px] font-[400] leading-[130%] text-white' href="mainto:the.sportsarchitect@gmail.com" >the.sportsarchitect@gmail.com</a>
         <SmallParagraph className={"text-white mt-[40px]"}>
         © ALL RIGHTS ARE RESERVED 2024
         </SmallParagraph>

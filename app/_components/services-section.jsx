@@ -7,7 +7,7 @@ import Wrapper from "@/components/wrapper";
 export default function ServicesSection() {
   return (
     <section className="w-full relative ">
-      <Wrapper className={"h-[110vh] max-h-[1000px] min-h-[800px]"}>
+      <Wrapper className={"md:h-[110vh] h-[90vh] max-h-[1000px] min-h-[800px]"}>
         <div className="rounded-[80px] h-full overflow-hidden bg-black py-[50px] px-[15px] relative">
           <div
             className="absolute w-full h-[90%] top-[10%] left-0 bottom-0 right-0 flex justify-center items-center z-[2]"
@@ -34,9 +34,9 @@ export default function ServicesSection() {
           </div>
           <div className="z-[3] relative">
             <MediumHeading
-              className={"flex gap-[10px] px-[20px] text-white items-center"}
+              className={"flex gap-[10px] md:px-[20px] text-white items-center"}
             >
-              <Triangle className={"mx-[20px]"} dark={false} />
+              <Triangle className={"md:mx-[20px] mx-[5px]"} dark={false} />
               Services
             </MediumHeading>
             <SmallHeading className={"text-white mt-[50px] text-center"}>
