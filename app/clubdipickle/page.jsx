@@ -1,8 +1,16 @@
+
 import NavbarOther from "@/components/navbar-other";
 import LargeHeading from "@/components/TypoGraphy/heaidng-large";
 import LargeParagraph from "@/components/TypoGraphy/paragraph-large";
 import Wrapper from "@/components/wrapper";
 import React from "react";
+
+
+export const metadata = {
+  title: "Club Dipickle | The Sports Architect",
+  description: "We are 3d sports architecture designer agency with over 10 years of experience and 250+ happy clients from all over the world. We are experienced in 3d sports architect designing and animation.",
+};
+
 
 export default function BaseballPage() {
   return (
