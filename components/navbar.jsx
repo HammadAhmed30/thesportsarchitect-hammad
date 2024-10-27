@@ -16,8 +16,8 @@ export default function Navbar({
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full max-w-[1300px] mx-auto p-[12px] absolute top-[15px] left-0 right-0 z-[10]">
-      <div className="w-full px-[45px] pt-[10px] flex justify-between items-center">
+    <nav className="w-full max-w-[1300px] mx-auto p-[12px] absolute md:top-[15px] top-[3px] left-0 right-0 z-[10]">
+      <div className="w-full md:px-[45px] px-[20px] pt-[10px] flex justify-between items-center">
         <img src="/logowhite.png" className="h-[60px]" alt="" />
         <div className="bg-black md:flex rounded-full p-[3px] hidden">
           <span

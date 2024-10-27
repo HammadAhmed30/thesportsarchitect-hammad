@@ -13,7 +13,7 @@ export default function CallUsSection() {
   return (
     <section className="w-full relative ">
       <Wrapper>
-        <div className="rounded-[80px] md:mt-0 mt-elementSpace h-full overflow-hidden bg-black py-[50px] px-[15px] relative">
+        <div className="md:rounded-[80px] rounded-[50px] md:mt-0 mt-elementSpace h-full overflow-hidden bg-black py-[50px] px-[15px] relative">
           <MediumHeading
             className={"flex gap-[10px]  md:px-[20px] text-white items-center"}
           >
@@ -28,7 +28,7 @@ export default function CallUsSection() {
 
           <div className="w-full flex justify-center"></div>
           <Link href={"/"} className="flex justify-center">
-          <ReuseableButton className={"w-[80%]"}>Start a Call</ReuseableButton>
+          <ReuseableButton className={"w-[80%] md:hidden block"}>Start a Call</ReuseableButton>
           </Link>
 
         </div>

@@ -17,7 +17,7 @@ export default function AboutUsSection() {
 
 
   return (
-    <section className='py-sectionSepration'>
+    <section className='md:py-sectionSepration py-elementSpace'>
         <Wrapper className={"md:px-[50px] px-[15px] "}>
             <MediumHeading className={"flex gap-[10px] items-center"}>
                 <Triangle className={"md:mx-[20px] mx-[5px]"} dark={true} />

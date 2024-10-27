@@ -47,7 +47,7 @@ export default function ReviewsSection() {
 
 const ReviewCard = () =>{
     return (
-        <div className="bg-black md:p-[30px] p-[20px] rounded-tl-[50px]">
+        <div className="bg-black md:p-[30px] p-[20px] md:rounded-tl-[50px] rounded-tl-[39px] ">
             <img src="/quotes.png" className="md:w-[50px] w-[35px]" alt="" />
             <SmallParagraph className={"mt-[20px] text-white"}>
             THIS IS SOME DUMMY TEXT THAT WILL BE CHANGED WITH SOME REVIEW TEXT FROM FIVERR LATER WHILE DEVELOPMENT TEXT THAT WILL BE CHANGED WITH SOME REVIEW TEXT FROM FIVERR LATER WHILE DEVELOPMENT PROCESS.

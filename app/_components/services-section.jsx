@@ -8,7 +8,7 @@ export default function ServicesSection() {
   return (
     <section className="w-full relative ">
       <Wrapper className={"md:h-[110vh] h-[90vh] max-h-[1000px] min-h-[800px]"}>
-        <div className="rounded-[80px] h-full overflow-hidden bg-black py-[50px] px-[15px] relative">
+        <div className="md:rounded-[80px] rounded-[50px] h-full overflow-hidden bg-black py-[50px] px-[15px] relative">
           <div
             className="absolute w-full h-[90%] top-[10%] left-0 bottom-0 right-0 flex justify-center items-center z-[2]"
             style={{
