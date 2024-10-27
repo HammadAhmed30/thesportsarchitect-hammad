@@ -8,19 +8,20 @@ export default function BaseballPage() {
   return (
     <main className="w-full pb-elementSpace">
       <NavbarOther/>
+
       <Wrapper>
         <div className="w-full px-[0px] md:px-[40px] ">
-          <LargeHeading className={"py-[50px]"}>BASE BALL</LargeHeading>
+          <LargeHeading className={"py-[50px] uppercase"}>Complex</LargeHeading>
           <LargeParagraph className={"w-full max-w-[800px] mb-elementSpace"}>
-            WE PROVIDE 3D SPORTS ARCHITECTURE FOR BASEBALL GROUNDS, DELIVERING
-            INNOVATIVE, HIGH-PERFORMANCE, AND SUSTAINABLE DESIGNS.
+            WE OFFER 3D SPORTS ARCHITECTURE FOR SPORTS FACILITIES, DELIVERING
+            INNOVATIVE, HIGH-QUALITY, AND SUSTAINABLE DESIGNS.
           </LargeParagraph>
           <img
-            src="/b1.png"
+            src="/c1.png"
             className="w-full md:mb-[50px] mb-[13px] "
             alt=""
           />
-          <img src="/b2.png" className="w-full " alt="" />
+          <img src="/c2.png" className="w-full " alt="" />
         </div>
       </Wrapper>
     </main>

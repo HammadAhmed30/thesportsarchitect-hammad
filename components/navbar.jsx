@@ -48,9 +48,12 @@ export default function Navbar({
             REVIEWS
           </span>
         </div>
+        <Link href={"/callus"}>
+        
         <ReuseableButton className={"hidden md:block"}>
           Start a call
         </ReuseableButton>
+        </Link>
         <div
           onClick={() => {
             setMenuOpen(true);
@@ -135,7 +138,9 @@ export default function Navbar({
             </span>
           </div>
           <div className="flex justify-center w-full">
-            <Link href={"/call"} className="w-[70%]">
+            <Link onClick={() => {
+                setMenuOpen(false);
+              }} href={"/callus"} className="w-[70%]">
             <ReuseableButton className={"w-full"}>Start a call</ReuseableButton></Link>
             </div>
         </div>

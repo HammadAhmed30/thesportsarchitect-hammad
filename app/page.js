@@ -11,6 +11,7 @@ import MediumHeading from "@/components/TypoGraphy/heading-medium";
 import Triangle from "@/components/triangle";
 import Navbar from "@/components/navbar";
 import { useRef } from "react";
+import LandingPageCursor from "@/components/landing-page-cursor";
 
 export default function Page() {
 
@@ -35,6 +36,7 @@ export default function Page() {
     <ReactLenis root>
 
     <main className='w-full relative'>
+      <LandingPageCursor/>
       <Navbar scrollToServices={scrollToServices} scrollToPortfolio={scrollToPortfolio} scrollToReviews={scrollToReviews}  />
       <LandingSection />
       <AboutUsSection/>

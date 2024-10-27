@@ -10,17 +10,19 @@ export default function BaseballPage() {
       <NavbarOther/>
       <Wrapper>
         <div className="w-full px-[0px] md:px-[40px] ">
-          <LargeHeading className={"py-[50px]"}>BASE BALL</LargeHeading>
+          <LargeHeading className={"py-[50px] uppercase"}>
+            Ice Hockey
+          </LargeHeading>
           <LargeParagraph className={"w-full max-w-[800px] mb-elementSpace"}>
-            WE PROVIDE 3D SPORTS ARCHITECTURE FOR BASEBALL GROUNDS, DELIVERING
+            WE PROVIDE 3D SPORTS ARCHITECTURE FOR ICE HOCKEY ARENAS, DELIVERING
             INNOVATIVE, HIGH-PERFORMANCE, AND SUSTAINABLE DESIGNS.
           </LargeParagraph>
           <img
-            src="/b1.png"
+            src="/ic1.png"
             className="w-full md:mb-[50px] mb-[13px] "
             alt=""
           />
-          <img src="/b2.png" className="w-full " alt="" />
+          <img src="/ic2.png" className="w-full " alt="" />
         </div>
       </Wrapper>
     </main>

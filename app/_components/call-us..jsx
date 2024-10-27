@@ -27,7 +27,7 @@ export default function CallUsSection() {
           <CallBox/>
 
           <div className="w-full flex justify-center"></div>
-          <Link href={"/"} className="flex justify-center">
+          <Link href={"/callus"} className="flex justify-center">
           <ReuseableButton className={"w-[80%] md:hidden block"}>Start a Call</ReuseableButton>
           </Link>
 

@@ -32,7 +32,7 @@ export default function AboutUsSection() {
           >
                     <h1 className={"text-[70px] font-[600] relative flex"}>
                     {counterOn && (
-                <CountUp start={0} end={250} duration={5} delay={0} />
+                <CountUp start={0} end={250} duration={2} delay={0} />
               )}+
                         <div className='absolute bottom-[15px] left-[-10%] w-[120%] h-[25px] z-[-1] bg-mainColor'></div>
                     </h1>

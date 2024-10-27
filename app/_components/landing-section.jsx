@@ -1,30 +1,57 @@
-"use client"
+"use client";
 import Wrapper from "@/components/wrapper";
 
 import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
+  Carousel,
+  CarouselContent,
+  CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import LargeHeading from "@/components/TypoGraphy/heaidng-large";
 import Triangle from "@/components/triangle";
 import SmallParagraph from "@/components/TypoGraphy/paragraph-small";
+import { state } from "@/store";
 
 export default function LandingSection() {
   return (
-    <section className="h-[100vh]">
+    <section
+      className="h-[100vh] cursor-none"
+      onMouseEnter={() => {
+        state.cursorHovered = true;
+        state.cursorText = "Scroll Down";
+      }}
+      onMouseLeave={() => {
+        state.cursorHovered = false;
+        state.cursorText = "";
+      }}
+    >
       {/* <img src="/1-min.jpg" alt="" /> */}
       <Wrapper className={"h-full"}>
         <div className="w-full h-full relative">
           <div className="absolute top-0 left-0 w-full h-full bg-black z-[2] opacity-[.6] md:rounded-[80px] rounded-[50px]"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-black z-[4] opacity-[0] md:rounded-[80px] rounded-[50px]"></div>
           <div className="absolute top-0 left-0 w-full h-full z-[3] md:p-[50px] p-[15px] flex items-center">
             <div>
-
-            <LargeHeading className={"hidden md:flex items-center gap-[10px] text-white"}> <Triangle className={"mx-[20px]"} dark={false} /> Innovative 3D Sports</LargeHeading>
-            <LargeHeading className={"text-white hidden md:flex leading-[100%]"}>Architecture Solutions.</LargeHeading>
-            <LargeHeading className={"text-white block md:hidden leading-[120%]"}>Innovative 3D Sports Architecture Solutions.</LargeHeading>
-            <SmallParagraph className={"text-white mt-[25px]"}>Transforming Concepts into Immersive 3D Virtual Arenas.</SmallParagraph>
+              <LargeHeading
+                className={"hidden md:flex items-center gap-[10px] text-white"}
+              >
+                {" "}
+                <Triangle className={"mx-[20px]"} dark={false} /> Innovative 3D
+                Sports
+              </LargeHeading>
+              <LargeHeading
+                className={"text-white hidden md:flex leading-[100%]"}
+              >
+                Architecture Solutions.
+              </LargeHeading>
+              <LargeHeading
+                className={"text-white block md:hidden leading-[120%]"}
+              >
+                Innovative 3D Sports Architecture Solutions.
+              </LargeHeading>
+              <SmallParagraph className={"text-white mt-[25px]"}>
+                Transforming Concepts into Immersive 3D Virtual Arenas.
+              </SmallParagraph>
             </div>
           </div>
           <Carousel
