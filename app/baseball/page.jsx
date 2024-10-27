@@ -6,10 +6,7 @@ import Wrapper from "@/components/wrapper";
 import React from "react";
 
 
-export const metadata = {
-  title: "Base Ball | The Sports Architect",
-  description: "We are 3d sports architecture designer agency with over 10 years of experience and 250+ happy clients from all over the world. We are experienced in 3d sports architect designing and animation.",
-};
+
 
 export default function BaseballPage() {
   return (
@@ -17,11 +14,11 @@ export default function BaseballPage() {
       <NavbarOther/>
       <Wrapper>
         <div className="w-full px-[0px] md:px-[40px] ">
-          <LargeHeading className={"py-[50px]"}>BASE BALL</LargeHeading>
-          <LargeParagraph className={"w-full max-w-[800px] mb-elementSpace"}>
-            WE PROVIDE 3D SPORTS ARCHITECTURE FOR BASEBALL GROUNDS, DELIVERING
-            INNOVATIVE, HIGH-PERFORMANCE, AND SUSTAINABLE DESIGNS.
-          </LargeParagraph>
+        <h1 className={"md:text-[55px] text-[35px] font-[700] py-[50px] uppercase"}>BASE BALL</h1>
+          <p className={"md:text-[28px] text-[18px] font-[400] leading-[120%] w-full max-w-[800px] mb-elementSpace"}>
+          WE PROVIDE 3D SPORTS ARCHITECTURE FOR BASEBALL GROUNDS, DELIVERING
+          INNOVATIVE, HIGH-PERFORMANCE, AND SUSTAINABLE DESIGNS.
+          </p>
           <img
             src="/b1.png"
             className="w-full md:mb-[50px] mb-[13px] "

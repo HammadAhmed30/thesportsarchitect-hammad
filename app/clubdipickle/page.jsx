@@ -6,10 +6,7 @@ import Wrapper from "@/components/wrapper";
 import React from "react";
 
 
-export const metadata = {
-  title: "Club Dipickle | The Sports Architect",
-  description: "We are 3d sports architecture designer agency with over 10 years of experience and 250+ happy clients from all over the world. We are experienced in 3d sports architect designing and animation.",
-};
+
 
 
 export default function BaseballPage() {
@@ -19,13 +16,11 @@ export default function BaseballPage() {
 
       <Wrapper>
         <div className="w-full px-[0px] md:px-[40px] ">
-          <LargeHeading className={"py-[50px] uppercase"}>
-            Club Dipickle
-          </LargeHeading>
-          <LargeParagraph className={"w-full max-w-[800px] mb-elementSpace"}>
-            WE OFFER 3D SPORTS ARCHITECTURE FOR TENNIS COURTS, CREATING UNIQUE,
-            HIGH-QUALITY, AND ECO-FRIENDLY DESIGNS.
-          </LargeParagraph>
+        <h1 className={"md:text-[55px] text-[35px] font-[700] py-[50px] uppercase"}>Club Dipickle</h1>
+          <p className={"md:text-[28px] text-[18px] font-[400] leading-[120%] w-full max-w-[800px] mb-elementSpace"}>
+          WE OFFER 3D SPORTS ARCHITECTURE FOR TENNIS COURTS, CREATING UNIQUE,
+          HIGH-QUALITY, AND ECO-FRIENDLY DESIGNS.
+          </p>
           <img
             src="/uk1.png"
             className="w-full md:mb-[50px] mb-[13px] "
