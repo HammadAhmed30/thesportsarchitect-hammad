@@ -8,10 +8,10 @@ export default function Footer() {
       <img src="/logowhite.png" className='md:h-[100px] h-[80px]' alt="" />
       <div className=' flex gap-[15px] mt-[15px]'>
 
-        <a href='#' className='md:w-[60px] md:h-[60px] w-[45px] h-[45px] flex justify-center items-center rounded-full bg-mainColor'>
+        <a href='https://www.instagram.com/thesports.architect/' target='_blank' className='md:w-[60px] md:h-[60px] w-[45px] h-[45px] flex justify-center items-center rounded-full bg-mainColor'>
           <img className='md:w-[30px] md:h-[30px] w-[20px] h-[20px]' src="/insta.png" alt="" />
         </a>
-        <a href='#' className='md:w-[60px] md:h-[60px] w-[45px] h-[45px] flex justify-center items-center rounded-full bg-mainColor'>
+        <a href='https://www.youtube.com/@the.sports.architect' target='_blank' className='md:w-[60px] md:h-[60px] w-[45px] h-[45px] flex justify-center items-center rounded-full bg-mainColor'>
           <img className='md:w-[30px] md:h-[30px] w-[20px] h-[20px]' src="/youtube.png" alt="" />
         </a>
 

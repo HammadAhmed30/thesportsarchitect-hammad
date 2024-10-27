@@ -1,16 +1,19 @@
 "use client";
-import Wrapper from "@/components/wrapper";
 
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import { state } from "@/store";
+import { motion } from "framer-motion";
+
+
+import Wrapper from "@/components/wrapper";
 import Autoplay from "embla-carousel-autoplay";
 import LargeHeading from "@/components/TypoGraphy/heaidng-large";
 import Triangle from "@/components/triangle";
 import SmallParagraph from "@/components/TypoGraphy/paragraph-small";
-import { state } from "@/store";
 
 export default function LandingSection() {
   return (
@@ -26,8 +29,8 @@ export default function LandingSection() {
       }}
     >
       {/* <img src="/1-min.jpg" alt="" /> */}
-      <Wrapper className={"h-full"}>
-        <div className="w-full h-full relative">
+      <Wrapper className={"h-full overflow-hidden"}>
+        <div className="w-full h-full relative overflow-hidden md:rounded-[80px] rounded-[50px]">
           <div className="absolute top-0 left-0 w-full h-full bg-black z-[2] opacity-[.6] md:rounded-[80px] rounded-[50px]"></div>
           <div className="absolute top-0 left-0 w-full h-full bg-black z-[4] opacity-[0] md:rounded-[80px] rounded-[50px]"></div>
           <div className="absolute top-0 left-0 w-full h-full z-[3] md:p-[50px] p-[15px] flex items-center">
@@ -54,28 +57,34 @@ export default function LandingSection() {
               </SmallParagraph>
             </div>
           </div>
+          <motion.div initial={{ y: "30px", transform:"scale(1.2)", filter:"blur(10px)" }}
+        whileInView={{ y: "0px", transform:"scale(1)", filter:"blur(0px)" }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="w-full h-full"
+        >
+
           <Carousel
             className="h-full overflow-hidden md:rounded-[80px] rounded-[50px]"
-            // plugins={[
-            //   Autoplay({
-            //     delay: 5000,
-            //   }),
-            // ]}
+            plugins={[
+              Autoplay({
+                delay: 5000,
+              }),
+            ]}
           >
             <CarouselContent>
               <CarouselItem>
                 <div className="w-full h-[100vh]">
                   <img
-                    src="/1-min.jpg"
+                    src="/b1.png"
                     className="w-full h-full object-cover md:rounded-[80px] rounded-[50px]"
                     alt=""
                   />
                 </div>
               </CarouselItem>
-              {/* <CarouselItem>
+              <CarouselItem>
                 <div className="w-full h-[100vh] ">
                   <img
-                    src="/2-min.jpg"
+                    src="/c2.png"
                     className="w-full h-full object-cover md:rounded-[80px] rounded-[50px]"
                     alt=""
                   />
@@ -84,7 +93,7 @@ export default function LandingSection() {
               <CarouselItem>
                 <div className="w-full h-[100vh]">
                   <img
-                    src="/3-min.jpg"
+                    src="/d2.png"
                     className="w-full h-full object-cover md:rounded-[80px] rounded-[50px]"
                     alt=""
                   />
@@ -93,14 +102,16 @@ export default function LandingSection() {
               <CarouselItem>
                 <div className="w-full h-[100vh]">
                   <img
-                    src="/4-min.jpg"
+                    src="/ic1.png"
                     className="w-full h-full object-cover md:rounded-[80px] rounded-[50px]"
                     alt=""
                   />
                 </div>
-              </CarouselItem> */}
+              </CarouselItem>
             </CarouselContent>
           </Carousel>
+          </motion.div>
+
         </div>
       </Wrapper>
     </section>

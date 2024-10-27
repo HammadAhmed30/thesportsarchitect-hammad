@@ -3,10 +3,12 @@
 import { RiMenu5Line } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 import ReuseableButton from "./button";
 import SmallHeading from "./TypoGraphy/heading-small";
 import Link from "next/link";
+
 
 export default function Navbar({
   scrollToServices,
@@ -18,8 +20,12 @@ export default function Navbar({
   return (
     <nav className="w-full max-w-[1300px] mx-auto p-[12px] absolute md:top-[15px] top-[3px] left-0 right-0 z-[10]">
       <div className="w-full md:px-[45px] px-[20px] pt-[10px] flex justify-between items-center">
-        <img src="/logowhite.png" className="h-[60px]" alt="" />
-        <div className="bg-black md:flex rounded-full p-[3px] hidden">
+        <motion.img initial={{ y: "-20px", x : "-20px", opacity: "0%", blur: "100px" }}
+    whileInView={{ y: "0px", x:"0px", opacity: "100%", blur: "0px" }}
+    transition={{ duration: 0.6, ease: "easeInOut" }} src="/logowhite.png" className="h-[60px]" alt="" />
+        <motion.div initial={{ y: "-20px", opacity: "0%", blur: "100px" }}
+    whileInView={{ y: "0px", opacity: "100%", blur: "0px" }}
+    transition={{ duration: 0.6, ease: "easeInOut" }} className="bg-black md:flex rounded-full p-[3px] hidden">
           <span
             className="text-[13px] cursor-pointer font-[500] px-[17px] py-[10px] bg-[#242424] rounded-full text-mainColor"
             href=""
@@ -47,13 +53,18 @@ export default function Navbar({
           >
             REVIEWS
           </span>
-        </div>
+        </motion.div>
+        <motion.div initial={{ y: "-20px",x:"20px", opacity: "0%", blur: "100px" }}
+    whileInView={{ y: "0px", x:"0px", opacity: "100%", blur: "0px" }}
+    transition={{ duration: 0.6, ease: "easeInOut" }}>
+
         <Link href={"/callus"}>
         
         <ReuseableButton className={"hidden md:block"}>
           Start a call
         </ReuseableButton>
         </Link>
+        </motion.div>
         <div
           onClick={() => {
             setMenuOpen(true);

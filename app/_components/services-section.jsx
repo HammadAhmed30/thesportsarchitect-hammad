@@ -4,6 +4,8 @@ import SmallHeading from "@/components/TypoGraphy/heading-small";
 import LargeParagraph from "@/components/TypoGraphy/paragraph-large";
 import Wrapper from "@/components/wrapper";
 
+import { motion } from "framer-motion";
+
 export default function ServicesSection() {
   return (
     <section className="w-full relative ">
@@ -25,7 +27,9 @@ export default function ServicesSection() {
               {/* demp */}
 
 
-              <img src="/1-min.jpg" className={"w-full h-full object-cover"} alt="" />
+              <motion.img initial={{ y: "30px", transform:"scale(1.2)", filter:"blur(40px)" }}
+        whileInView={{ y: "0px", transform:"scale(1)", filter:"blur(0px)" }}
+        transition={{ duration: 1, ease: "easeInOut" }} src="/1-min.jpg" className={"w-full h-full object-cover"} alt="" />
 
               {/* Sides to give video rectangle a different shape */}
               <div className="absolute h-[200%] w-[150px] bg-black top-[-50%] left-[-120px] skew-x-[-4deg]"></div>

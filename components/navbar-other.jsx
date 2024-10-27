@@ -4,12 +4,15 @@ import { IoIosCall } from "react-icons/io";
 
 
 import ReuseableButton from "./button";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function NavbarOther() {
 
   return (
-    <nav className="w-full max-w-[1300px] mx-auto p-[12px] md:top-[15px] top-[3px] left-0 right-0 z-[10]">
+    <motion.div initial={{ y: "-30px", opacity: "0%", blur: "100px" }}
+    whileInView={{ y: "0px", opacity: "100%", blur: "0px" }}
+    transition={{ duration: 0.6, ease: "easeInOut" }} className="w-full max-w-[1300px] mx-auto p-[12px] md:top-[15px] top-[3px] left-0 right-0 z-[10]">
       <div className="w-full md:px-[45px] px-[0px] pt-[10px]  items-center">
         <div className="w-full flex justify-between bg-black items-center px-[5px] rounded-full">
 
@@ -30,6 +33,6 @@ export default function NavbarOther() {
         </div>
       </div>
 
-    </nav>
+    </motion.div>
   );
 }

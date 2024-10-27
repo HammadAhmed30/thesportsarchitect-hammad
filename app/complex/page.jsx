@@ -16,11 +16,11 @@ export default function BaseballPage() {
 
       <Wrapper>
         <div className="w-full px-[0px] md:px-[40px] ">
-          <LargeHeading className={"py-[50px] uppercase"}>Complex</LargeHeading>
-          <LargeParagraph className={"w-full max-w-[800px] mb-elementSpace"}>
+          <h1 className={"md:text-[55px] text-[35px] font-[700] py-[50px] uppercase"}>Complex</h1>
+          <p className={"md:text-[28px] text-[18px] font-[400] leading-[120%] w-full max-w-[800px] mb-elementSpace"}>
             WE OFFER 3D SPORTS ARCHITECTURE FOR SPORTS FACILITIES, DELIVERING
             INNOVATIVE, HIGH-QUALITY, AND SUSTAINABLE DESIGNS.
-          </LargeParagraph>
+          </p>
           <img
             src="/c1.png"
             className="w-full md:mb-[50px] mb-[13px] "
