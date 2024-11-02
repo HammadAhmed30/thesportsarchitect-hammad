@@ -210,8 +210,8 @@ export default function PortfolioSection() {
               </div>
             </CarouselItem>
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext  />
+          <CarouselPrevious className=" absolute left-[5px] top-[50%] translate-y-[-50%]" />
+          <CarouselNext className=" absolute right-[5px] top-[50%] translate-y-[-50%]" />
         </Carousel>
       </Wrapper>
     </section>
