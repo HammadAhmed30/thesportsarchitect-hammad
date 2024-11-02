@@ -11,7 +11,9 @@ import MediumHeading from "@/components/TypoGraphy/heading-medium";
 import Triangle from "@/components/triangle";
 import Navbar from "@/components/navbar";
 import { useRef } from "react";
-import LandingPageCursor from "@/components/landing-page-cursor";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import ReuseableButton from "@/components/button";
 
 export default function Page() {
 
@@ -36,7 +38,7 @@ export default function Page() {
     <ReactLenis root>
 
     <main className='w-full relative'>
-      <LandingPageCursor/>
+      {/* <LandingPageCursor/> */}
       <Navbar scrollToServices={scrollToServices} scrollToPortfolio={scrollToPortfolio} scrollToReviews={scrollToReviews}  />
       <LandingSection />
       <AboutUsSection/>
@@ -51,6 +53,21 @@ export default function Page() {
       <CallUsSection/>
       <div className="w-full" ref={reviewsTarget}></div>
       <ReviewsSection/>
+
+
+    <motion.div className="fixed bottom-[35px] right-[31px] md:bottom-[50px] md:right-[60px] z-[20]" initial={{ y: "20px",x:"0px", opacity: "0%", blur: "100px" }}
+    whileInView={{ y: "0px", x:"0px", opacity: "100%", blur: "0px" }}
+    transition={{ duration: 0.6, ease: "easeInOut" }}>
+
+        <Link href={"/callus"}>
+        
+        <ReuseableButton className={"shadow-lg md:scale-[1.2]"}>
+          START A PROJECT
+        </ReuseableButton>
+        </Link>
+        </motion.div>
+
+
     </main>
     </ReactLenis>
   )

@@ -42,8 +42,8 @@ export default function ReviewsSection() {
   ]
 
   return (
-    <section className="pt-[48px] pb-elementSpace">
-      <Wrapper className={"md:px-[50px] px-[12px]"}>
+    <section className=" py-elementSpace">
+      <Wrapper className={"md:px-[50px] px-[12px] mt-[-15px]"}>
         <MediumHeading className={"flex gap-[10px] items-center"}>
           <Triangle className={"md:mx-[20px] mx-[5px]"} dark={true} />
           Reviews

@@ -18,7 +18,7 @@ import SmallParagraph from "@/components/TypoGraphy/paragraph-small";
 export default function LandingSection() {
   return (
     <section
-      className="h-[100vh] cursor-none"
+      className="h-[100vh]"
       onMouseEnter={() => {
         state.cursorHovered = true;
         state.cursorText = "Scroll Down";
@@ -75,7 +75,7 @@ export default function LandingSection() {
               <CarouselItem>
                 <div className="w-full h-[100vh]">
                   <img
-                    src="/b1.png"
+                    src="/img1.jpg"
                     className="w-full h-full object-cover md:rounded-[80px] rounded-[50px]"
                     alt=""
                   />
@@ -83,8 +83,8 @@ export default function LandingSection() {
               </CarouselItem>
               <CarouselItem>
                 <div className="w-full h-[100vh] ">
-                  <img
-                    src="/c2.png"
+                <img
+                    src="/img2.jpg"
                     className="w-full h-full object-cover md:rounded-[80px] rounded-[50px]"
                     alt=""
                   />
@@ -92,8 +92,8 @@ export default function LandingSection() {
               </CarouselItem>
               <CarouselItem>
                 <div className="w-full h-[100vh]">
-                  <img
-                    src="/d2.png"
+                <img
+                    src="/img3.jpg"
                     className="w-full h-full object-cover md:rounded-[80px] rounded-[50px]"
                     alt=""
                   />
@@ -101,8 +101,26 @@ export default function LandingSection() {
               </CarouselItem>
               <CarouselItem>
                 <div className="w-full h-[100vh]">
-                  <img
-                    src="/ic1.png"
+                <img
+                    src="/img4.jpg"
+                    className="w-full h-full object-cover md:rounded-[80px] rounded-[50px]"
+                    alt=""
+                  />
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="w-full h-[100vh]">
+                <img
+                    src="/img5.jpg"
+                    className="w-full h-full object-cover md:rounded-[80px] rounded-[50px]"
+                    alt=""
+                  />
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="w-full h-[100vh]">
+                <img
+                    src="/img6.jpg"
                     className="w-full h-full object-cover md:rounded-[80px] rounded-[50px]"
                     alt=""
                   />

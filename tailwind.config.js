@@ -52,8 +52,8 @@ module.exports = {
   			}
   		},
 		  spacing: {
-			"sectionSepration":"80px",
-			"elementSpace":"60px",
+			"sectionSepration":"40px",
+			"elementSpace":"40px",
 			"smallTagSpacing":"50px"
 		  },
   		borderRadius: {

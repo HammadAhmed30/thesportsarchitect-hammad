@@ -54,17 +54,7 @@ export default function Navbar({
             REVIEWS
           </span>
         </motion.div>
-        <motion.div initial={{ y: "-20px",x:"20px", opacity: "0%", blur: "100px" }}
-    whileInView={{ y: "0px", x:"0px", opacity: "100%", blur: "0px" }}
-    transition={{ duration: 0.6, ease: "easeInOut" }}>
-
-        <Link href={"/callus"}>
-        
-        <ReuseableButton className={"hidden md:block"}>
-          Start a call
-        </ReuseableButton>
-        </Link>
-        </motion.div>
+       
         <div
           onClick={() => {
             setMenuOpen(true);
