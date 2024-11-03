@@ -66,7 +66,7 @@ export default function Navbar({
       </div>
 
       <div
-        className={`fixed h-[100vh] w-full bg-black top-0 ${
+        className={`fixed h-[100vh] w-full bg-black z-[30] top-0 ${
           menuOpen ? "right-0" : "right-[-110vw]"
         } transition-all `}
         style={{ transitionDuration: "1000ms" }}
