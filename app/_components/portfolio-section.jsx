@@ -82,7 +82,7 @@ export default function PortfolioSection() {
 
         <img className="w-[90%] h-[90%] object-contain" src={seeImage} alt="" />
       </div>}
-      <LargeParagraph className={"text-center"}>3D ANIMATION</LargeParagraph>
+      <LargeParagraph className={"text-center uppercase"}>Render Animation for videos</LargeParagraph>
       <Wrapper
         className={" overflow-hidden flex items-center pb-[12px]"}
       >
@@ -159,7 +159,7 @@ export default function PortfolioSection() {
           <CarouselNext className="md:hidden flex" />
         </Carousel>
       </Wrapper>
-      <LargeParagraph className={"text-center mt-elementSpace"}>3D ANIMATION</LargeParagraph>
+      <LargeParagraph className={"text-center mt-elementSpace uppercase"}>Render Images for  photos</LargeParagraph>
       <Wrapper
         className={"overflow-hidden flex items-center pb-[12px] relative"}
       >
