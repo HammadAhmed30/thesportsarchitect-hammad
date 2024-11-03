@@ -47,7 +47,7 @@ export default function Page() {
       <div className="w-full" ref={portfolioTarget}></div>
       <MediumHeading className={"flex gap-[10px] md:px-[50px] px-[15px] py-elementSpace items-center"}>
           <Triangle className={"md:mx-[20px] mx-[5px]"} dark={true} />
-          Portfolio
+          Our Work
         </MediumHeading>
       <PortfolioSection/>
       <CallUsSection/>

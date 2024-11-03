@@ -15,12 +15,12 @@ export default function CallUsPage() {
       <NavbarOther/>
 
       <Wrapper>
-        <div className="md:rounded-[80px] rounded-[50px] md:mt-0 h-full overflow-hidden pt-[50px] pb-[20px] px-[15px] relative">
+        <div className="md:rounded-[80px] rounded-[50px] md:mt-0 h-full overflow-hidden pt-[25px] pb-[20px] px-[15px] relative">
           <MediumHeading
             className={"flex gap-[10px]  md:px-[20px] text-black items-center"}
           >
             <Triangle className={"md:mx-[20px] mx-[5px]"} dark={true} />
-            Call Us
+            Start a Project
           </MediumHeading>
           <div className="md:mt-sectionSepration mt-elementSpace"></div>
           <CallBox />

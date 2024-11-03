@@ -180,33 +180,108 @@ export default function PortfolioSection() {
         >
           <CarouselContent>
             <CarouselItem className="lg:basis-1/4">
-            <div onClick={()=>setSeeImage("/img1.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
-            <img src="img1.jpg" className="object-cover w-full h-full" alt="" />
+            <div onClick={()=>setSeeImage("/b1.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/b1.jpg" className="object-cover w-full h-full" alt="" />
               </div>
             </CarouselItem>
             <CarouselItem className="lg:basis-1/4">
-            <div onClick={()=>setSeeImage("/img2.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
-              <img src="img2.jpg" className="object-cover w-full h-full" alt="" />
+            <div onClick={()=>setSeeImage("/b2.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+              <img src="/b2.jpg" className="object-cover w-full h-full" alt="" />
               </div>
             </CarouselItem>
             <CarouselItem className="lg:basis-1/4">
-            <div onClick={()=>setSeeImage("/img3.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
-            <img src="img3.jpg" className="object-cover w-full h-full" alt="" />
+            <div onClick={()=>setSeeImage("/g1.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/g1.jpg" className="object-cover w-full h-full" alt="" />
               </div>
             </CarouselItem>
             <CarouselItem className="lg:basis-1/4">
-            <div onClick={()=>setSeeImage("/img4.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
-            <img src="img4.jpg" className="object-cover w-full h-full" alt="" />
+            <div onClick={()=>setSeeImage("/g2.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/g2.jpg" className="object-cover w-full h-full" alt="" />
               </div>
             </CarouselItem>
             <CarouselItem className="lg:basis-1/4">
-            <div onClick={()=>setSeeImage("/img5.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
-            <img src="img5.jpg" className="object-cover w-full h-full" alt="" />
+            <div onClick={()=>setSeeImage("/g4.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/g4.jpg" className="object-cover w-full h-full" alt="" />
               </div>
             </CarouselItem>
             <CarouselItem className="lg:basis-1/4">
-            <div onClick={()=>setSeeImage("/img6.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
-            <img src="img6.jpg" className="object-cover w-full h-full" alt="" />
+            <div onClick={()=>setSeeImage("/g5.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/g5.jpg" className="object-cover w-full h-full" alt="" />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="lg:basis-1/4">
+            <div onClick={()=>setSeeImage("/p1.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/p1.jpg" className="object-cover w-full h-full" alt="" />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="lg:basis-1/4">
+            <div onClick={()=>setSeeImage("/p2.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/p2.jpg" className="object-cover w-full h-full" alt="" />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="lg:basis-1/4">
+            <div onClick={()=>setSeeImage("/p3.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/p3.jpg" className="object-cover w-full h-full" alt="" />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="lg:basis-1/4">
+            <div onClick={()=>setSeeImage("/p4.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/p4.jpg" className="object-cover w-full h-full" alt="" />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="lg:basis-1/4">
+            <div onClick={()=>setSeeImage("/par1.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/par1.jpg" className="object-cover w-full h-full" alt="" />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="lg:basis-1/4">
+            <div onClick={()=>setSeeImage("/par2.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/par2.jpg" className="object-cover w-full h-full" alt="" />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="lg:basis-1/4">
+            <div onClick={()=>setSeeImage("/r1.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/r1.jpg" className="object-cover w-full h-full" alt="" />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="lg:basis-1/4">
+            <div onClick={()=>setSeeImage("/r2.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/r2.jpg" className="object-cover w-full h-full" alt="" />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="lg:basis-1/4">
+            <div onClick={()=>setSeeImage("/r3.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/r3.jpg" className="object-cover w-full h-full" alt="" />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="lg:basis-1/4">
+            <div onClick={()=>setSeeImage("/r4.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/r4.jpg" className="object-cover w-full h-full" alt="" />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="lg:basis-1/4">
+            <div onClick={()=>setSeeImage("/n1.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/n1.jpg" className="object-cover w-full h-full" alt="" />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="lg:basis-1/4">
+            <div onClick={()=>setSeeImage("/n2.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/n2.jpg" className="object-cover w-full h-full" alt="" />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="lg:basis-1/4">
+            <div onClick={()=>setSeeImage("/n3.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/n3.jpg" className="object-cover w-full h-full" alt="" />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="lg:basis-1/4">
+            <div onClick={()=>setSeeImage("/n4.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/n4.jpg" className="object-cover w-full h-full" alt="" />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="lg:basis-1/4">
+            <div onClick={()=>setSeeImage("/n5.jpg")} className="md:h-[350px] h-[400px] cursor-pointer overflow-hidden rounded-[15px]">
+            <img src="/n5.jpg" className="object-cover w-full h-full" alt="" />
               </div>
             </CarouselItem>
           </CarouselContent>

@@ -18,7 +18,7 @@ export default function CallUsSection() {
             className={"flex gap-[10px]  md:px-[20px] text-white items-center"}
           >
             <Triangle className={"md:mx-[20px] mx-[5px]"} dark={false} />
-            Call Us
+            Start a Project
           </MediumHeading>
 
 <div className="md:mt-sectionSepration mt-elementSpace"></div>
